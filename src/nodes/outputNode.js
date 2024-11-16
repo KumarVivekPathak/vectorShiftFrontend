@@ -16,35 +16,8 @@ export const OutputNode = ({ id, data }) => {
   };
 
   return (
-    // <div style={{width: 200, height: 80, border: '1px solid black'}}>
-    //   <Handle
-    //     type="target"
-    //     position={Position.Left}
-    //     id={`${id}-value`}
-    //   />
-    //   <div>
-    //     <span>Output</span>
-    //   </div>
-    //   <div>
-    //     <label>
-    //       Name:
-    //       <input 
-    //         type="text" 
-    //         value={currName} 
-    //         onChange={handleNameChange} 
-    //       />
-    //     </label>
-    //     <label>
-    //       Type:
-    //       <select value={outputType} onChange={handleTypeChange}>
-    //         <option value="Text">Text</option>
-    //         <option value="File">Image</option>
-    //       </select>
-    //     </label>
-    //   </div>
-    // </div>
 
-    <div className="bg-gradient-to-br from-violet-50 to-purple-50 shadow-lg border border-violet-200 p-4 rounded-xl w-[300px] transition-all duration-300 hover:shadow-xl">
+    <div className="bg-gradient-to-br from-violet-50 to-purple-50 shadow-lg border border-violet-200 p-4 rounded-xl min-w-72 max-w-72 transition-all duration-300 hover:shadow-xl">
       <Handle
         type="target"
         position={Position.Left}

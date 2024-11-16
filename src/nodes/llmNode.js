@@ -5,7 +5,7 @@ import { Handle, Position } from 'reactflow';
 export const LLMNode = ({ id, data }) => {
 
   return (
-    <div className="bg-gradient-to-br from-violet-50 to-purple-50 shadow-lg border border-violet-200 p-4 rounded-xl min-w-full transition-all duration-300 hover:shadow-xl">
+    <div className=" min-w-72 bg-gradient-to-br from-violet-50 to-purple-50 shadow-lg border border-violet-200 p-4 rounded-xl transition-all duration-300 hover:shadow-xl">
     <Handle
       type="target"
       position={Position.Left}
@@ -19,18 +19,18 @@ export const LLMNode = ({ id, data }) => {
       type="target"
       position={Position.Left}
       id={`${id}-prompt`}
-      className="w-3 h-3 bg-violet-500 border-2 border-white left-[-6px]"
+      className="w-3 h-3 bg-violet-500 border-2 border-white"
       style={{ top: '66.66%' }}
     />
 
     <div className="space-y-3">
       <div className="text-center mb-2">
-        <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-purple-600">
+        <h3 className="text-xl font-bold bg-clip-text text-transparent bg-violet-600 to-purple-600">
           LLM
         </h3>
       </div>
 
-      <div className="text-center text-sm text-violet-700 bg-violet-50 p-3 rounded-lg border border-violet-100">
+      <div className="text-center text-sm text-black bg-gray-50 p-3 rounded-lg border border-violet-100">
         <span>This is a LLM.</span>
       </div>
     </div>

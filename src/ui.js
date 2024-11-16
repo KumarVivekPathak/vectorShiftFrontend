@@ -32,6 +32,8 @@ const selector = (state) => ({
   onConnect: state.onConnect,
 });
 
+
+
 export const PipelineUI = () => {
     const reactFlowWrapper = useRef(null);
     const [reactFlowInstance, setReactFlowInstance] = useState(null);
@@ -45,7 +47,9 @@ export const PipelineUI = () => {
       onConnect
     } = useStore(selector, shallow);
 
+    console.log("node is : ", edges, "\n  nodeee is : ", nodes)
     const getInitNodeData = (nodeID, type) => {
+      
       let nodeData = { id: nodeID, nodeType: `${type}` };
       return nodeData;
     }
@@ -88,9 +92,10 @@ export const PipelineUI = () => {
         event.dataTransfer.dropEffect = 'move';
     }, []);
 
+
     return (
         
-        <div ref={reactFlowWrapper} style={{width: '100wv', height: '70vh'}} className=' bg-green-300'>
+        <div ref={reactFlowWrapper} style={{width: '100wv', height: '70vh'}} className=' bg-green-200'>
             <ReactFlow
                 nodes={nodes}
                 edges={edges}
