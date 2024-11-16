@@ -47,7 +47,6 @@ export const PipelineUI = () => {
       onConnect
     } = useStore(selector, shallow);
 
-    console.log("node is : ", edges, "\n  nodeee is : ", nodes)
     const getInitNodeData = (nodeID, type) => {
       
       let nodeData = { id: nodeID, nodeType: `${type}` };
